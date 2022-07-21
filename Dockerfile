@@ -4,5 +4,5 @@ WORKDIR /app
 COPY . .
 # stage 2
 FROM nginx:alpine
-RUN ng build
+RUN npm run build
 COPY --from=node /app/dist/BookStore /usr/share/nginx/html
