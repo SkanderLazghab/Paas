@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: SkanderLazghab/Paas:#(Build.BuildId)#
+        image: SkanderLazghab/Paas:29
         ports: 
         - containerPort: 80 
 --- 
