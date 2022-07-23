@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: registry-1.docker.io/skanderlazghab/paas:latest
+        image: skanderlazghab/paas:38
         ports: 
         - containerPort: 3100 
 --- 
