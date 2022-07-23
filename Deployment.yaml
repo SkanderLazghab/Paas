@@ -16,7 +16,7 @@ spec:
       - name: angular 
         image: SkanderLazghab/Paas:$(Build.BuildId)
         ports: 
-        - containerPort: 80 
+        - containerPort: 3000 
 --- 
 # https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
@@ -29,5 +29,5 @@ spec:
   ports: 
   - protocol: TCP 
     port: 80 
-    targetPort: 80 
+    targetPort: 3000 
   type: LoadBalancer
