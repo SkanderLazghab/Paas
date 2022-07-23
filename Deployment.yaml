@@ -16,7 +16,7 @@ spec:
       - name: angular 
         image: registry-1.docker.io/skanderlazghab/paas:latest
         ports: 
-        - containerPort: 3000 
+        - containerPort: 3100 
 --- 
 # https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
@@ -29,5 +29,5 @@ spec:
   ports: 
   - protocol: TCP 
     port: 80 
-    targetPort: 3000 
+    targetPort: 3100 
   type: LoadBalancer
