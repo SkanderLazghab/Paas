@@ -16,7 +16,7 @@ spec:
       - name: angular 
         image: skanderlazghab/paas:38
         ports: 
-        - containerPort: 3100 
+        - containerPort: 80 
 --- 
 # https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
@@ -29,5 +29,5 @@ spec:
   ports: 
   - protocol: TCP 
     port: 80 
-    targetPort: 3100 
+    targetPort: 80 
   type: LoadBalancer
